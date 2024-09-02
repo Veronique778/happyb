@@ -1,0 +1,181 @@
+body {
+  margin: 0;
+  font-family: Garamond, serif;
+  background-color: #08246f;
+  color: #ffffff;
+}
+
+header {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #08246f;
+}
+
+.firsth1 {
+  margin: 0;
+  text-align: left;
+  font-size: 200px;
+  margin-bottom: 10%;
+  position: relative;
+  text-transform: uppercase;
+  font-size: 2em;
+  letter-spacing: 4px;
+  overflow: hidden;
+  background: linear-gradient(90deg, #d5f504, #08246f, #d5f504);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: animate 3s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+
+@keyframes animate {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 500%;
+  }
+}
+
+
+.firstimg {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  margin-bottom: 10%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2vw;
+}
+
+.container1 {
+  display: flex;
+  justify-content: space-between;  
+  gap: 50px;
+  flex-wrap: wrap;
+  background-color: #191919;
+  width: 100%;
+  margin: 0;
+  padding: 90px 50px; /* Встановлюємо рівномірні відступи */
+}
+
+
+.first, 
+ .two, 
+ .third {
+  width: 300px;
+  height: 120px;
+  border-radius: 30px;
+  background-color: aliceblue;
+  transition: transform 0.3s ease;
+}
+
+.first:hover {
+ font-size: 30px;
+ transform: scale(1.1);
+ }
+
+ .two:hover {
+ font-size: 30px;
+ transform: scale(1.1);
+ }
+
+ .third:hover {
+ font-size: 30px;
+ transform: scale(1.1);
+ }
+
+
+.container2 {
+  font-size: 1.5vw;
+  margin: 70;
+  width: 70%;
+  height: 300px;
+  gap: 50px;
+  background-color: aliceblue;
+  text-align: center;
+  margin-bottom: 2vw;
+  border-radius: 30px;
+  margin-top: 50px;
+  margin-bottom: 0px;
+}
+
+footer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #191919;
+  padding: 1vw 0;
+  margin-bottom: 0;
+  margin-top: 100px;
+}
+
+.happyb-day {
+  width: 300px;
+  height: 250px;
+}
+
+
+.header_right{
+  width: 300px; /* Встановлює ширину контейнера картки в 300 пікселів. */
+  height: 300px; /* Встановлює висоту контейнера картки в 300 пікселів. */
+  display: flex; /* Використовує flexbox для розташування вмісту картки. */
+  flex-direction: column; /* Задає напрямок розташування дочірніх елементів у колонку (вертикально). */
+  align-items: center; /* Центрує всі дочірні елементи по горизонталі. */
+  justify-content: center; /* Центрує всі дочірні елементи по вертикалі. */
+  gap: 100px; /* Задає відстань у 100 пікселів між дочірніми елементами. */
+  perspective: 60px; /* Задає перспективу для тривимірного ефекту, коли картка буде трансформуватися. */
+}
+
+.firstimg {
+  width: 100%; /* Встановлює ширину картки рівною ширині батьківського контейнера. */
+  height: 100%; /* Встановлює висоту картки рівною висоті батьківського контейнера. */
+  border-radius: 155px; /* Закруглює кути картки радіусом 15 пікселів. */
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); /* Додає тінь під карткою для надання їй об’єму. */
+  display: flex; /* Використовує flexbox для розташування вмісту всередині картки. */
+  justify-content: center; /* Центрує вміст картки по горизонталі. */
+  align-items: center; /* Центрує вміст картки по вертикалі. */
+  text-align: center; /* Вирівнює текст по центру. */
+}
+
+.youthebest-1,
+.youthebest-2,
+.youthebest-3 {
+  color: #191919;
+  text-align: center;
+  margin-top: 15%;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+p {
+  color: #191919;
+  text-align: center;
+ font-size: 24px;
+ margin-left: 3%;
+ margin-right: 3%;
+ margin-top: 4%;
+}
+
+@keyframes tada {
+  0% { transform: scale(1); }
+  10%, 20% { transform: scale(0.9) rotate(-3deg); }
+  30%, 50%, 70%, 90% { transform: scale(1.1) rotate(3deg); }
+  40%, 60%, 80% { transform: scale(1.1) rotate(-3deg); }
+  100% { transform: scale(1) rotate(0); }
+}
+
+.footer_content {
+  display: inline-block; /* Додано, щоб анімація була більш помітною */
+  animation: tada 1s ease-in-out infinite; /* Запускаємо анімацію tada */
+}
